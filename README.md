@@ -1,3 +1,5 @@
+[![](https://jitpack.io/v/Mhamza007/secure-vault-android.svg)](https://jitpack.io/#Mhamza007/secure-vault-android)
+
 ## 🔐 API Key Security with SecureVault
 
 This app uses a reusable module (`:securevault`) that encrypts API keys at runtime using Tink + Android Keystore.
