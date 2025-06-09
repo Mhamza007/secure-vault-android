@@ -1,3 +1,7 @@
+# 🔐 secure-vault-android
+
+[![](https://jitpack.io/v/Mhamza007/secure-vault-android.svg)](https://jitpack.io/#Mhamza007/secure-vault-android)
+
 ## 🔐 API Key Security with SecureVault
 
 This app uses a reusable module (`:securevault`) that encrypts API keys at runtime using Tink + Android Keystore.
@@ -18,6 +22,23 @@ This app uses a reusable module (`:securevault`) that encrypts API keys at runti
 - No raw keys exist in the APK
 - All key access is via `SecureVault.getDecryptedKey(context, keyLabel)`
 
-### 📦 Single Source of Truth
+## 🚀 Installation
 
-All secret keys are managed from:
+### 1. Add JitPack to your project
+
+In your root `settings.gradle.kts` or `build.gradle.kts`:
+
+```kotlin
+dependencyResolutionManagement {
+    repositories {
+        maven { url = uri("https://jitpack.io") }
+        google()
+        mavenCentral()
+    }
+}
+
+### 1. Import the library
+
+In your app `build.gradle.kts`:
+
+implementation("com.github.Mhamza007:secure-vault-android:(lastest-version)")
