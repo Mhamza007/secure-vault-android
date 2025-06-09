@@ -36,9 +36,12 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
+```
 
-### 1. Import the library
+### 2. Import the library
 
 In your app `build.gradle.kts`:
 
+```kotlin
 implementation("com.github.Mhamza007:secure-vault-android:(lastest-version)")
+```
